@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: o;
+    height: 100%;
+    padding: 0;
+}
+
+.main {
+    background-image: url("media/retezat_img1_2.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+}
+
+h1 {
+    flex: 2;
+    font-size: 4rem;
+    color: white;
+   margin: 5rem 0 0 0;
+}
+
+#dest p {
+    font-size: 2.5rem;
+    color: white;
+    flex: 1;
+    margin: 0 0 5rem 0;
+    
+}
+
+#link-page {
+    flex: 7;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+}
+
+.link {
+    height: 16rem;
+    width: 24rem;
+    border-radius: 10px;
+    margin: 2rem 5rem 0 5rem;
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    color: white;
+    z-index: 10;
+}
+#link-regions {
+    background-image: url("media/toscana_img2_1.jpg");
+    height: 16rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#link-regions:hover {
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+#link-cities {
+    background-image: url("media/florenta_img1_1.jpg");
+    height: 16rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#link-countries {
+    background-image: url("media/croatia_img1_1.jpg");
+    height: 16rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.regions {
+    display: none;
+    margin: 0;
+    background: greenyellow;
+    width: 100%;
+}
+
+
+.main-regions {
+  margin: 0;
+    display: block;
+    width: 100%;
+}
+.main-reg {
+    /* position: relative; */
+    display:block;
+    margin: 5rem 0 0 0 ;
+   z-index: 10;
+    height: 100%;
+ 
+    /* overflow: scroll; */
+}
+.nav-regions {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background: rgb(41, 11, 63);
+    width: 100%;
+    z-index: 100;
+  margin-top: 0;
+  margin-bottom: 2rem;
+   border-bottom: 2px solid greenyellow;
+   border-top: 3px solid purple;
+    
+}
+.regions-menu {
+     width: 100%;
+     
+}
+.regions-menu a img {
+    height: 6.3rem;
+    margin: 0 1rem;
+   
+}
+
+.regions-menu a {
+    text-decoration: none;
+   font-size: 1.5rem;
+   color: aliceblue;
+   
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 1rem;
+}
+.main-menu button {
+    background: rgb(217, 244, 99);
+    color:rgb(41, 11, 63);
+    font-size: 1.25rem;
+    margin: 0.1rem 0;
+    border-radius: 3px;
+}
+.card-regions {
+    display:flex;
+    flex-direction: row;
+   align-items: center;
+   position: relative;
+  color:white;
+   margin: 1rem 0;
+   background: rgb(46, 10, 72);
+   width: 100%;
+}
+
+
+
+.card-regions h2,h3,p,a {
+    margin:  auto;
+}
+
+.card-regions h2 {
+    font-size: 3rem;
+    margin-top: 1.75rem;
+    margin-left: 0.75rem;
+}
+.card-regions h3 {
+    font-size: 2rem;
+}
+.card-regions p {
+    font-style: italic;
+    width: 10rem;
+}
+.img2 {
+    width: 30%;
+    margin: 2.5rem auto;
+    border-radius: 15px;
+}
+
+.card-regions a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+.active {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+.visible {
+    display: flex;
+}
+
+.invisible {
+    display: none;
+}
