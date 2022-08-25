@@ -7,7 +7,12 @@ const regionPage = document.querySelector('.regions');
 
 const mainRegions = document.querySelector('.main-reg');
 const regionMeniu = document.querySelector('.regions-menu');
-const homeBtn = document.querySelector('.main-menu button');
+const homeBtn = document.querySelector('.main-menu:first-child button');
+const regionBtn = document.querySelector('.main-menu button:nth-child(2)');
+const citiesBtn = document.querySelector('.main-menu button:nth-child(3)');
+const countryBtn = document.querySelector('.main-menu button:nth-child(4)');
+
+console.log(regionBtn);
 
 function getRegionsHTML(place) {
   return ` 
@@ -61,4 +66,23 @@ homeBtn.addEventListener('click', () => {
   mainPage.classList.add('main');
 });
 
-console.log(cities.name);
+regionBtn.addEventListener('click', () => {
+  regionPage.classList.remove('invisible');
+  regionPage.classList.add('visible');
+  mainPage.classList.add('invisible');
+  displayRegions(regions);
+});
+
+citiesBtn.addEventListener('click', () => {
+  regionPage.classList.remove('invisible');
+  regionPage.classList.add('visible');
+  mainPage.classList.add('invisible');
+  displayRegions(cities);
+});
+
+countryBtn.addEventListener('click', () => {
+  regionPage.classList.remove('invisible');
+  regionPage.classList.add('visible');
+  mainPage.classList.add('invisible');
+  displayRegions(countries);
+});
