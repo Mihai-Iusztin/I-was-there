@@ -54,6 +54,12 @@ h1 {
     color: white;
     z-index: 10;
 }
+
+.link:hover {
+    cursor: pointer;
+    color: bisque;
+}
+
 #link-regions {
     background-image: url("media/regions/toscana_img2_1.jpg");
     height: 16rem;
@@ -143,6 +149,10 @@ h1 {
     font-size: 1.25rem;
     margin: 0.1rem 0;
     border-radius: 3px;
+}
+.main-menu button:hover {
+    cursor: pointer;
+    background: rgb(85, 242, 23);
 }
 .card-regions {
     display:flex;
